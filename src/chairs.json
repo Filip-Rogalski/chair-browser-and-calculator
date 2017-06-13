@@ -1,0 +1,37 @@
+[
+    {
+        "type": "Clair",
+        "price": "320",
+        "keywors": "office, living, formal"
+    },
+    {
+        "type": "Margarita",
+        "price": "350",
+        "keywords": "living, informal, cozy"
+    },
+    {
+        "type": "Selena",
+        "price": "340",
+        "keywords": "designer, art, fancy"
+    },
+    {
+        "type": "Symphony",
+        "price": "400",
+        "keywords": "manoir, elegant"
+    },
+    {
+        "type": "Bambino",
+        "price": "200",
+        "keywords": "children"
+    },
+    {
+        "type": "Verandah",
+        "price": "180",
+        "keywords": "garden"
+    },
+    {
+        "type": "Astrid",
+        "price": "360",
+        "keywords": "swedish, simplicity, elegant"
+    }
+]

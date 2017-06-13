@@ -8,16 +8,12 @@ class SearchInput extends React.Component {
       <div className="component-search-input">
         <div>
           <input
-            onChange={this.props.textChange}
+            onChange={this.props.textChange} placeholder="Wybierz fotele do porównania"
           />
         </div>
       </div>
     );
   }
 }
-
-SearchInput.propTypes = {
-  textChange: React.PropTypes.func,
-};
 
 export default SearchInput;

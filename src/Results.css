@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.results-container {
+    margin: 10px 0;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    line-height: 50px;
+    border: 1px solid #00c2a1;
+    font-size: 20px;
+    font-family: 'ralewaythin', 'Arial', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+}
+
+    
+    

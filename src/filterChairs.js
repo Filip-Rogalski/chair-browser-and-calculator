@@ -1,8 +1,8 @@
-input chairs from './chairs.json';
+import chairList from './chairs.json';
 
 export default function filterChairs(searchText) {
-    return chairs.filter((chair) => {
-        if (chair.title.includes(serchText)) {
+    return chairList.filter((chair) => {
+        if (chair.type.includes(searchText)) {
             return true;
         }
         if (chair.keywords.includes(searchText)) {

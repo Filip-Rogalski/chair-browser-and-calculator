@@ -1,37 +1,65 @@
 [
     {
+        "id": "1",
         "type": "Clair",
         "price": "320",
+        "category": "living-room",
         "keywords": "office, living, formal"
     },
     {
+        "id": "2",
         "type": "Margarita",
         "price": "350",
+        "category": "living-room",
         "keywords": "living, informal, cozy"
     },
     {
+        "id": "3",
         "type": "Selena",
         "price": "340",
+        "category": "office",
         "keywords": "designer, art, fancy"
     },
     {
+        "id": "4",
         "type": "Symphony",
         "price": "400",
+        "category": "living-room",
         "keywords": "manoir, elegant"
     },
     {
+        "id": "5",
         "type": "Bambino",
         "price": "200",
+        "category": "children",
         "keywords": "children"
     },
     {
+        "id": "6",
         "type": "Verandah",
         "price": "180",
+        "category": "garden",
         "keywords": "garden"
     },
     {
+        "id": "7",
         "type": "Astrid",
         "price": "360",
-        "keywords": "swedish, simplicity, elegant"
+        "category": "living-room",
+        "keywords": "swedish, simple, elegant"
+    },
+    {
+        "id": "8",
+        "type": "Petunia",
+        "price": "230",
+        "category": "garden",
+        "keywords": "simple, lightweight"
+    },
+    {
+        "id": "9",
+        "type": "Superhero",
+        "price": "130",
+        "category": "children",
+        "keywords": "thematic, boys, superhero"
     }
 ]

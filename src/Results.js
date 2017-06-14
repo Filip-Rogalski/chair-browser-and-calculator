@@ -8,9 +8,9 @@ class Results extends React.Component {
       <div className="results-container">
         <div>
             <ul>
-        {this.props.chairData.map(item => (
-          <li key={'results' + item.type} onClick={this.props.handler} data-price={item.price}>{item.type}</li>
-        ))}
+                {this.props.chairData.map(item => (
+                  <li key={item.id} onClick={this.props.handler} data-price={item.price}>{item.type}</li>
+                ))}
             </ul>
         </div>
       </div>

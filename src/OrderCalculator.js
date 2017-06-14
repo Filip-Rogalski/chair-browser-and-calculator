@@ -19,8 +19,8 @@ class OrderCalculator extends React.Component {
                     <h1>skomponuj swój fotel</h1> 
                 </div>
                 <OptionPicker category="typ" items={this.props.chairData} handler={this.handleTypeChoice}/>
-                <OptionPicker category="kolor" items={[["Czerwony",0], ["Czarny",0], ["Pomarańczowy",20]]} handler={this.handleColorChoice}/>
-                <OptionPicker category="materiał" items={[["Tkanina",0], ["Skóra",0.25]]} handler={this.handleFabricChoice}/>
+                <OptionPicker category="kolor" items={[[0, "Czerwony", 0], [1, "Czarny", 0], [2, "Pomarańczowy", 20]]} handler={this.handleColorChoice}/>
+                <OptionPicker category="materiał" items={[[0, "Tkanina", 0], [1, "Skóra", 0.25]]} handler={this.handleFabricChoice}/>
                 <div className="checkbox check-box">
                     <input type="checkbox" id="transport" data-transport-price="200" onChange={this.handleTransportCheckbox}/>
                     <label htmlFor="transport">Transport</label>
@@ -76,7 +76,7 @@ class OptionPicker extends React.Component {
                 <span className="list_arrow" onClick={this.arrowHandler}></span>
                 {(this.state.optionsVisibility !== 0) && <ul className="list_panel">
                 {this.props.items.map(item => (
-                    <ListItem key={item[0]} dataValue={item[1]} handler={this.props.handler} value={item[0]} />
+                    <ListItem key={item[0]} dataValue={item[2]} handler={this.props.handler} value={item[1]} />
                 ))}
             </ul>}
             </div>

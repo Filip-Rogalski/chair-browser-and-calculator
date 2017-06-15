@@ -3,14 +3,14 @@
         "id": "1",
         "type": "Clair",
         "price": "320",
-        "category": "living-room",
+        "category": "livingroom",
         "keywords": "office, living, formal"
     },
     {
         "id": "2",
         "type": "Margarita",
         "price": "350",
-        "category": "living-room",
+        "category": "livingroom",
         "keywords": "living, informal, cozy"
     },
     {
@@ -24,7 +24,7 @@
         "id": "4",
         "type": "Symphony",
         "price": "400",
-        "category": "living-room",
+        "category": "livingroom",
         "keywords": "manoir, elegant"
     },
     {
@@ -45,7 +45,7 @@
         "id": "7",
         "type": "Astrid",
         "price": "360",
-        "category": "living-room",
+        "category": "livingroom",
         "keywords": "swedish, simple, elegant"
     },
     {

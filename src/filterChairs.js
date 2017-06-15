@@ -5,7 +5,7 @@ export default function filterChairs(searchText) {
         if (chair.type.includes(searchText)) {
             return true;
         }
-        if (chair.keywords.includes(searchText)) {
+        if (chair.category.includes(searchText)) {
             return true;
         }
         return false;

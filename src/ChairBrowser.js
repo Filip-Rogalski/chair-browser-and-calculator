@@ -3,6 +3,7 @@ import SearchInput from './SearchInput';
 import Results from './Results';
 import KeywordsPanel from './KeywordsPanel';
 import filterChairs from './filterChairs';
+import setCategoryList from './setCategoryList';
 import './index.css';
 
 class ChairBrowser extends React.Component {
@@ -11,13 +12,17 @@ class ChairBrowser extends React.Component {
         super();
         this.handleSearchChange = this.handleSearchChange.bind(this);
         this.state = {
-            filteredChairs: filterChairs('')
+            filteredChairs: filterChairs(''), categoryList: ['livingroom', 'garden', 'office', 'children'].sort()
         };
     }
-
+    
     handleSearchChange(e) {
         this.setState({
             filteredChairs: filterChairs(e.target.value)
+        }, function(){
+            this.setState({
+                categoryList: setCategoryList(this.state.filteredChairs)
+            })
         });
     }
     
@@ -29,8 +34,9 @@ class ChairBrowser extends React.Component {
                         <h1>Przeglądaj fotele</h1>
                     </div>
                     <SearchInput textChange={this.handleSearchChange}/>
-                    <KeywordsPanel chairData={this.state.filteredChairs}/>
+                    <KeywordsPanel categoryList={this.state.categoryList}/>
                     <Results chairData={this.state.filteredChairs} handler={this.props.handler}/>
+                    <button onClick={this.props.clearList}>Wyczyść listę</button>
                 </div>
             </div>
         )
